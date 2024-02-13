@@ -1465,5 +1465,37 @@
         "default": "scheme-1"
       }
     ]
+  },
+  {
+    "name": "General Info",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Location"
+      },
+      {
+        "type": "richtext",
+        "id": "general_location",
+        "label": "Text"
+      },
+      {
+        "type": "header",
+        "content": "Email"
+      },
+      {
+        "type": "richtext",
+        "id": "general_email",
+        "label": "Text"
+      },
+      {
+        "type": "header",
+        "content": "Phone"
+      },
+      {
+        "type": "richtext",
+        "id": "general_phone",
+        "label": "Text"
+      }
+    ]
   }
 ]

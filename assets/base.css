@@ -2374,9 +2374,14 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 /* Main Header Layout */
 .header-wrapper {
-  display: block;
-  position: relative;
+  /* display: block; */
+  /* position: relative; */
   background-color: rgb(var(--color-background));
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: .4s;
 }
 
 .header-wrapper--border-bottom {
@@ -3516,4 +3521,11 @@ details-disclosure > details {
   .animate--hover-vertical-lift .button:not([disabled]).button--secondary:hover:after {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
+}
+
+
+/* Swiper */
+
+.swiper {
+  display: block;
 }

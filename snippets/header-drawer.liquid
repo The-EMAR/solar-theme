@@ -16,9 +16,12 @@
         {% render 'icon-close' %}
       </span>
     </summary>
+
     <div id="menu-drawer" class="gradient menu-drawer motion-reduce color-{{ section.settings.menu_color_scheme }}">
       <div class="menu-drawer__inner-container">
         <div class="menu-drawer__navigation-container">
+          
+
           <nav class="menu-drawer__navigation">
             <ul class="menu-drawer__menu has-submenu list-menu" role="list">
               {%- for link in section.settings.menu.links -%}
@@ -123,6 +126,7 @@
               {%- endfor -%}
             </ul>
           </nav>
+
           <div class="menu-drawer__utility-links">
             {%- if shop.customer_accounts_enabled -%}
               <a

@@ -1273,3 +1273,19 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+
+// Sticky Header
+const sticky = document.querySelector('header');
+const header = document.querySelector('.header-wrapper');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > sticky.scrollHeight) {
+    header.classList.add('color-scheme-1');
+    header.classList.remove('color-scheme-4'); // Ensure previous scheme is removed
+    // header.style.background = 'transparent';
+  } else {
+    header.classList.remove('color-scheme-1');
+    header.classList.add('color-scheme-4'); // Ensure original scheme is restored
+    // sticky.style.background = 'transparent';
+  }
+});

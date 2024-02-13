@@ -5,9 +5,11 @@
     "footer": {
       "type": "footer",
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-4",
+        "footer_menu_heading": "Връзки",
+        "footer_menu": "footer",
         "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
+        "newsletter_heading": "Абонирайте се за най-новото от нашия блог и проектите ни в секция портфолио",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": true,
