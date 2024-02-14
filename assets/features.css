@@ -1,0 +1,28 @@
+.features {}
+
+.features .features__heading {
+  text-align: center;
+}
+
+.features .features__inner {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+ gap: 3rem;
+ align-items: flex-start;
+ justify-content: center;
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .features .features__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .features .features__inner {
+    grid-template-columns: 1fr;
+  }
+}
+

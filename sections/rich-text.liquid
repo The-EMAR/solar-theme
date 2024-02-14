@@ -22,6 +22,7 @@
           {%- case block.type -%}
             {%- when 'heading' -%}
               <h2
+                data-aos="fade-up"
                 class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
@@ -33,6 +34,7 @@
               </h2>
             {%- when 'caption' -%}
               <p
+                data-aos="fade-up"
                 class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}

@@ -1280,12 +1280,14 @@ const header = document.querySelector('.header-wrapper');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > sticky.scrollHeight) {
-    header.classList.add('color-scheme-1');
-    header.classList.remove('color-scheme-4'); // Ensure previous scheme is removed
-    // header.style.background = 'transparent';
+    header.classList.add('transparent-blur');
+    // header.classList.add('color-scheme-1');
+    // header.classList.add('color-scheme-1'); 
   } else {
-    header.classList.remove('color-scheme-1');
-    header.classList.add('color-scheme-4'); // Ensure original scheme is restored
-    // sticky.style.background = 'transparent';
+    if (header.classList.contains('is-home')) {
+      header.classList.remove('transparent-blur');
+    }
+    // header.classList.remove('color-scheme-1');
+    // header.classList.add('color-scheme-4'); 
   }
 });

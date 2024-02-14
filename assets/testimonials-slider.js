@@ -1,5 +1,5 @@
-if (!customElements.get('hero-slider')) {
-  class HeroSlider extends HTMLElement {
+if (!customElements.get('testimonials-slider')) {
+  class TestimonialsSlider extends HTMLElement {
     constructor() {
       super();
     }
@@ -13,7 +13,14 @@ if (!customElements.get('hero-slider')) {
         draggable: true,
         slidesPerView: 1,
         watchOverflow: true,
-        // autoHeight: true,
+        breakpoints: {
+          767: {
+            slidesPerView: 1,
+          },
+          1023: {
+            slidesPerView: 3,
+          },
+        },
         navigation: {
           nextEl: '.swiper-arrow--next',
           prevEl: '.swiper-arrow--prev',
@@ -28,8 +35,8 @@ if (!customElements.get('hero-slider')) {
   }
 
   customElements.define(
-    'hero-slider',
-    HeroSlider,
+    'testimonials-slider',
+    TestimonialsSlider,
   );
 }
 

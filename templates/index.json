@@ -3,38 +3,304 @@
     "hero_j6f9gh": {
       "type": "hero",
       "blocks": {
-        "slide_qH67KL": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ES_59.png",
-            "sub_title": "Sub Title",
-            "title": "Title",
-            "content": "Lorem",
-            "button_title": "View",
-            "button_link": "\/"
-          }
-        },
         "slide_iJPTnJ": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ES_59.png",
-            "sub_title": "Sub Title 2",
-            "title": "Title 2",
-            "content": "Lorem",
-            "button_title": "View",
-            "button_link": "\/"
+            "image": "shopify:\/\/shop_images\/393367_solar-panels-wallpapers-94218_1600x1200_h.png",
+            "sub_title": "Клас ААА",
+            "title": "Солрани панели за вашият дом и бизнес",
+            "content": "",
+            "button_title_1": "Обадете ни се",
+            "button_link_1": "tel:999 999 999",
+            "button_title_2": "Пишете ни",
+            "button_link_2": "mailto:test@abv.bg"
+          }
+        },
+        "slide_qH67KL": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1000_F_571516233_mvCA5hRWn6gnrZPyS6dCfLK0zHlJpqZR.jpg",
+            "sub_title": "Клас ААА",
+            "title": "Соларни панели за вашият дом",
+            "content": "",
+            "button_title_1": "",
+            "button_link_1": "",
+            "button_title_2": "",
+            "button_link_2": ""
           }
         }
       },
       "block_order": [
-        "slide_qH67KL",
-        "slide_iJPTnJ"
+        "slide_iJPTnJ",
+        "slide_qH67KL"
       ],
       "settings": {
+      }
+    },
+    "rich_text_bNfdN4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FAjhCr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Кои сме ние",
+            "heading_size": "h1"
+          }
+        },
+        "text_7JBEkd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ние сме <strong>Solar Systems<\/strong>, водеща компания за инсталация на соларни панели в Шумен и региона. От години предлагаме висококачествени решения за домакинства и бизнеси, които искат да намалят разходите си за електроенергия и да преминат към по-чиста и устойчива енергия.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FAjhCr",
+        "text_7JBEkd"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "features_aBjrdR": {
+      "type": "features",
+      "blocks": {
+        "feature_ttD8cw": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/hand-holding-dollar-solid.svg",
+            "content": "<h3><strong>Спестете пари<\/strong><\/h3><p>Намалете сметките си за електроенергия с до 50%<\/p>"
+          }
+        },
+        "feature_xJyfDm": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/leaf-solid.svg",
+            "content": "<h3><strong>Екологично чиста енергия<\/strong><\/h3><p>Използвайте чиста и възобновяема енергия<\/p>"
+          }
+        },
+        "feature_jHXxct": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/arrow-trend-up-solid.svg",
+            "content": "<h3><strong>Повишена стойност на вашия дом<\/strong><\/h3><p>Увеличете стойността на вашия имот с инсталиране на соларни панели<\/p>"
+          }
+        },
+        "feature_JJXVDA": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/handshake-regular.svg",
+            "content": "<h3><strong>Надеждност и качество<\/strong><\/h3><p>Възползвайте се от професионален монтаж и поддръжка<\/p>"
+          }
+        },
+        "feature_Y3FjEi": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/phone-solid.svg",
+            "content": "<h3><strong>Безплатна консултация<\/strong><\/h3><p>Получайте безплатна оценка на вашия дом и енергийни нужди<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "feature_ttD8cw",
+        "feature_xJyfDm",
+        "feature_jHXxct",
+        "feature_JJXVDA",
+        "feature_Y3FjEi"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Преимущества"
+      }
+    },
+    "services_YKhy3C": {
+      "type": "services",
+      "blocks": {
+        "service_XecUR9": {
+          "type": "service",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Go-Solar-Solar-Panel-System-Design.png",
+            "content": "<p>Консултиране и проектиране<\/p>"
+          }
+        },
+        "service_imTtyN": {
+          "type": "service",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pexels-kindel-media-9875418-scaled.jpg",
+            "content": "<p>Монтаж на соларни панели<\/p>"
+          }
+        },
+        "service_8xnVt7": {
+          "type": "service",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slp15-021.jpg",
+            "content": "<p>Поддръжка на соларни панели<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "service_XecUR9",
+        "service_imTtyN",
+        "service_8xnVt7"
+      ],
+      "settings": {
+        "heading": "Нашите услуги"
+      }
+    },
+    "collection_list_4qVHbw": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_RHzGic": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "батерии"
+          }
+        },
+        "featured_collection_cwtdzX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "фотоволтаични-панели"
+          }
+        },
+        "featured_collection_p6agnK": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "инвертори"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_RHzGic",
+        "featured_collection_cwtdzX",
+        "featured_collection_p6agnK"
+      ],
+      "settings": {
+        "title": "Продукти",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "testimonials_bpBbMt": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_KRfTX4": {
+          "type": "testimonial",
+          "settings": {
+            "content": "<p><strong>\"Много съм доволен от инсталацията на соларните панели на моя дом. Екипът на Solar Systemss беше професионален и учтив, а самата инсталация беше бърза и безпроблемна. Вече забелязвам значително намаление в сметките си за електроенергия.\"<\/strong><\/p>",
+            "author": "Author 1"
+          }
+        },
+        "testimonial_KXLJ4V": {
+          "type": "testimonial",
+          "settings": {
+            "content": "<p><strong>\"Избрах Solar Systems за инсталиране на соларни панели на моя бизнес, защото те предложиха най-конкурентната цена и най-висококачествените продукти. Доволен съм от решението си - системата работи отлично и ми помага да спестявам пари.\"<\/strong><\/p>",
+            "author": "Author 2"
+          }
+        },
+        "testimonial_YLfXTm": {
+          "type": "testimonial",
+          "settings": {
+            "content": "<p><strong>\"Бях скептично настроен към соларните панели, но след като се консултирах с Solar Systems, реших да им се доверя. Те ми помогнаха да разбера как работи технологията и какви са ползите от нея. Сега съм горд собственик на соларна система и се радвам, че допринасям за опазване на околната среда.\"<\/strong><\/p>",
+            "author": "Author 3"
+          }
+        },
+        "testimonial_JiFRJW": {
+          "type": "testimonial",
+          "settings": {
+            "content": "<p><strong>\"Препоръчвам Solar Systems на всеки, който търси надеждна и професионална фирма за инсталиране на соларни панели. Те са компетентни, отзивчиви и предлагат отлично съотношение цена-качество.\"<\/strong><\/p>",
+            "author": "Author 4"
+          }
+        },
+        "testimonial_F9xpwm": {
+          "type": "testimonial",
+          "settings": {
+            "content": "<p><strong>\"Благодаря на Solar Systems за безпроблемната инсталация на моята соларна система. Сега мога да се радвам на чиста енергия и да намалявам разходите си.\"<\/strong><\/p>",
+            "author": "Author 5"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_KRfTX4",
+        "testimonial_KXLJ4V",
+        "testimonial_YLfXTm",
+        "testimonial_JiFRJW",
+        "testimonial_F9xpwm"
+      ],
+      "settings": {
+        "heading": "Отзиви от наши партньори"
+      }
+    },
+    "collage_e3dmVz": {
+      "type": "collage",
+      "blocks": {
+        "image_7jNCRC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/istockphoto-948327168-2048x2048.jpg"
+          }
+        },
+        "image_itF4Rq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/istockphoto-1405880267-612x612.jpg"
+          }
+        },
+        "image_PfdjjH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/istockphoto-1198580200-2048x2048.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_7jNCRC",
+        "image_itF4Rq",
+        "image_PfdjjH"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "contact_form_ndAHyK": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
-    "hero_j6f9gh"
+    "hero_j6f9gh",
+    "rich_text_bNfdN4",
+    "features_aBjrdR",
+    "services_YKhy3C",
+    "collection_list_4qVHbw",
+    "testimonials_bpBbMt",
+    "collage_e3dmVz",
+    "contact_form_ndAHyK"
   ]
 }

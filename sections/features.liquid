@@ -1,0 +1,75 @@
+{{- 'features.css' | asset_url | stylesheet_tag -}}
+{{- 'feature.css' | asset_url | stylesheet_tag -}}
+
+{% assign _section = section.settings %}
+{% assign _blocks = section.blocks %}
+
+{% if _section.heading != blank or _block.size > 0 %}
+  <section class="features">
+    <div class="page-width">
+      <h1 data-aos="fade-up" class="features__heading">{{ _section.heading }}</h1>
+      
+      {% if _blocks.size > 0 %}
+        <div class="features__inner">
+          {% for block in _blocks %}
+            {% assign _block = block.settings %}
+
+            {% if _block.icon != blank or _block.content != blank %}
+              <div class="feature">
+                {% if _block.icon != blank %}
+                  <div data-aos="fade-up" class="feature__icon">
+                    <img src="{{ _block.icon |  image_url: width: 64 }}" loading="lazy" alt="">
+                  </div><!-- /.feature__icon -->
+                {% endif %}
+        
+                {% if _block.content != blank %}
+                  <div data-aos="fade-up" class="feature__content">
+                    <div class="feature__entry">
+                      {{ _block.content }}
+                    </div><!-- /.feature__entry -->
+                  </div><!-- /.feature__content -->
+                {% endif %}
+              </div><!-- /.feature -->
+            {% endif %}
+          {% endfor %}
+        </div><!-- /.features__inner -->
+      {% endif %}
+    </div><!-- /.page-width -->
+  </section><!-- /.features -->
+{% endif %}
+
+{% schema %}
+  {
+  "name": "Features",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Feature",
+      "type": "feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Features"
+    }
+  ]
+}  
+{% endschema %}

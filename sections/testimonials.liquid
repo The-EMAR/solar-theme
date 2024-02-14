@@ -1,0 +1,81 @@
+<script src="{{- 'swiper-bundle.min.js' | asset_url -}}" defer="defer"></script>
+<script src="{{- 'testimonials-slider.js' | asset_url -}}" defer="defer"></script>
+
+{{- 'swiper-bundle.min.css' | asset_url | stylesheet_tag -}}
+{{- 'testimonials.css' | asset_url | stylesheet_tag -}}
+{{- 'testimonial.css' | asset_url | stylesheet_tag -}}
+
+{% assign _section = section.settings %}
+{% assign _blocks = section.blocks %}
+
+{% if _section.heading != blank or _block.size > 0 %}
+  <section class="testimonials">
+    <div class="page-width">
+      {% if _section.heading != blank %}
+        <h1 class="testimonials__heading">{{ _section.heading }}</h1>
+      {% endif %}
+  
+      <testimonials-slider class="swiper testimonials__slider">
+        <div class="swiper-wrapper">      
+          {% for block in _blocks %}
+            {% assign _block = block.settings %}
+
+            {% if _block.content != blank %}
+              <div class="swiper-slide" >          
+                <div class="testimonial">
+                  <div class="testimonial__entry">
+                    {{ _block.content }}
+                  </div><!-- /.testimonial__entry -->
+
+                  {% if _block.author  %}
+                    <cite>{{ _block.author }}</cite>
+                  {% endif %}
+                </div><!-- /.testimonial -->
+              </div><!-- /.swiper-slide -->
+            {% endif %}
+          {% endfor %}
+        </div><!-- /.swiper-wrapper -->
+    
+        {% if _blocks.size > 1 %}
+          <div class="swiper-pagination"></div><!-- /.swiper-pagination -->
+        {% endif %}
+      </testimonials-slider><!-- /.testimonials-slider -->  
+    </div><!-- /.page-width -->
+  </section><!-- /.testimonials -->
+{% endif %}
+
+{% schema %}
+  {
+  "name": "Testimonials",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Testimonial",
+      "type": "testimonial",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials"
+    }
+  ]
+}  
+{% endschema %}

@@ -13,6 +13,7 @@
       <div class="swiper-wrapper">      
         {% for block in _blocks %}
           {% assign _block = block.settings %}
+          
           {% if _block.image != blank %}
             <div class="swiper-slide" >          
               <div class="page-width">
@@ -21,24 +22,34 @@
                     <img src="{{ _block.image | image_url: width: 1024 }}" width="1024" height="1024" loading="lazy" alt="">
                   </div><!-- /.hero__image -->
 
-                  <div class="hero__content" data-aos="fade-up" data-aos-duration="3000">
-                    {% if _block.sub_title != blank %}
-                      <h4>{{ _block.sub_title }}</h4>
-                    {% endif %}
+                  <div class="hero__content">
+                    <div class="hero__content-top">
+                      {% if _block.title != blank %}
+                        <h1 class="hero__title">{{ _block.title }}</h1>
+                      {% endif %}
   
-                    {% if _block.title != blank %}
-                      <h1>{{ _block.title }}</h1>
-                    {% endif %}
-              
-                    {% if _block.content != blank %}
-                      <div class="hero__entry">
-                        <p>{{ _block.content }}</p>
-                      </div><!-- /.hero__entry -->
-                    {% endif %}
-              
-                    {% if _block.button_title != blank and _block.button_link != blank %}
-                      <a href="{{ _block.button_link }}" class="btn">{{ _block.button_title }}</a>
-                    {% endif %}
+                      {% if _block.sub_title != blank %}
+                        <h4 class="hero__sub-title">{{ _block.sub_title }}</h4>
+                      {% endif %}
+                    </div><!-- /.hero__content-top -->
+
+                    <div class="hero__content-bottom">
+                      {% if _block.content != blank %}
+                        <div class="hero__entry">
+                          <p>{{ _block.content }}</p>
+                        </div><!-- /.hero__entry -->
+                      {% endif %}
+
+                      <div class="hero__actions">
+                        {% if _block.button_title_1 != blank and _block.button_link_1 != blank %}
+                          <a href="{{ _block.button_link_1 }}" class="button button--alt hero__button">{{ _block.button_title_1 }}</a>
+                        {% endif %}
+
+                        {% if _block.button_title_2 != blank and _block.button_link_2 != blank %}
+                          <a href="{{ _block.button_link_2 }}" class="button button--next hero__button">{{ _block.button_title_2 }}</a>
+                        {% endif %}
+                      </div><!-- /.hero__actions -->
+                    </div><!-- /.hero__content-bottom -->
                   </div><!-- /.hero__content -->
                 </div><!-- /.hero__inner -->
               </div><!-- /.page-width -->
@@ -89,13 +100,27 @@
         },
         {
           "type": "text",
-          "id": "button_title",
+          "id": "button_title_1",
           "label": "Title"
         },
         {
           "type": "url",
-          "id": "button_link",
+          "id": "button_link_1",
           "label": "LInk"
+        },
+        {
+          "type": "header",
+          "content": "Button Secondary"
+        },
+        {
+          "type": "text",
+          "id": "button_title_2",
+          "label": "Title"
+        },
+        {
+          "type": "url",
+          "id": "button_link_2",
+          "label": "Link"
         }
       ]
     }
