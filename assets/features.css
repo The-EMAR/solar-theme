@@ -21,8 +21,6 @@
 
 /* Mobile */
 @media (max-width: 767px) {
-  .features .features__inner {
-    grid-template-columns: 1fr;
-  }
+
 }
 

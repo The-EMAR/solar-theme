@@ -1,5 +1,5 @@
-if (!customElements.get('testimonials-slider')) {
-  class TestimonialsSlider extends HTMLElement {
+if (!customElements.get('certificates-slider')) {
+  class CertificatesSlider extends HTMLElement {
     constructor() {
       super();
     }
@@ -12,7 +12,6 @@ if (!customElements.get('testimonials-slider')) {
       this.slider = new Swiper(this, {
         draggable: true,
         slidesPerView: 1,
-        spaceBetween: 60,
         watchOverflow: true,
         breakpoints: {
           767: {
@@ -36,8 +35,8 @@ if (!customElements.get('testimonials-slider')) {
   }
 
   customElements.define(
-    'testimonials-slider',
-    TestimonialsSlider,
+    'certificates-slider',
+    CertificatesSlider,
   );
 }
 

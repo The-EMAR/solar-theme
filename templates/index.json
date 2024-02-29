@@ -44,7 +44,7 @@
         "heading_FAjhCr": {
           "type": "heading",
           "settings": {
-            "heading": "Кои сме ние",
+            "heading": "Кои сме <strong>ние ?<\/strong>",
             "heading_size": "h1"
           }
         },
@@ -65,7 +65,41 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 40
+      }
+    },
+    "services_YKhy3C": {
+      "type": "services",
+      "blocks": {
+        "service_XecUR9": {
+          "type": "service",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Go-Solar-Solar-Panel-System-Design.png",
+            "content": "<p><strong>Консултиране и проектиране<\/strong><\/p>"
+          }
+        },
+        "service_imTtyN": {
+          "type": "service",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pexels-kindel-media-9875418-scaled.jpg",
+            "content": "<p><strong>Монтаж на соларни панели<\/strong><\/p>"
+          }
+        },
+        "service_8xnVt7": {
+          "type": "service",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slp15-021.jpg",
+            "content": "<p><strong>Поддръжка на соларни панели<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "service_XecUR9",
+        "service_imTtyN",
+        "service_8xnVt7"
+      ],
+      "settings": {
+        "heading": "Нашите <strong>услуги<\/strong>"
       }
     },
     "features_aBjrdR": {
@@ -114,43 +148,17 @@
         "feature_JJXVDA",
         "feature_Y3FjEi"
       ],
-      "disabled": true,
       "settings": {
-        "heading": "Преимущества"
+        "heading": "Преимущества",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
-    "services_YKhy3C": {
-      "type": "services",
-      "blocks": {
-        "service_XecUR9": {
-          "type": "service",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Go-Solar-Solar-Panel-System-Design.png",
-            "content": "<p>Консултиране и проектиране<\/p>"
-          }
-        },
-        "service_imTtyN": {
-          "type": "service",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/pexels-kindel-media-9875418-scaled.jpg",
-            "content": "<p>Монтаж на соларни панели<\/p>"
-          }
-        },
-        "service_8xnVt7": {
-          "type": "service",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/slp15-021.jpg",
-            "content": "<p>Поддръжка на соларни панели<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "service_XecUR9",
-        "service_imTtyN",
-        "service_8xnVt7"
-      ],
+    "image_content_pawAYm": {
+      "type": "image-content",
       "settings": {
-        "heading": "Нашите услуги"
+        "image": "shopify:\/\/shop_images\/handshake.xf5b59127.jpg",
+        "content": "<h1>Защо да <strong>изберете нас?<\/strong><\/h1><ul><li><strong>Solar Systems е водеща компания за инсталиране на соларни панели, с над 5г опит в бранша.<\/strong> Ние предлагаме висококачествени продукти и услуги на конкурентни цени.<\/li><\/ul><p><\/p><ul><li><strong>Нашият екип от професионалисти ще ви помогне да изберете най-добрата соларна система за вашия дом или бизнес.<\/strong> Ние ще се погрижим за всичко - от проектирането и инсталирането до поддръжката и мониторинга.<\/li><\/ul><p><\/p><ul><li><strong>За нас е важно да осигурим на клиентите си най-доброто възможно обслужване.<\/strong> Ние сме ангажирани с вашето удовлетворение и ще ви помогнем да се възползвате максимално от вашата соларна система.<\/li><\/ul>"
       }
     },
     "collection_list_4qVHbw": {
@@ -181,7 +189,7 @@
         "featured_collection_p6agnK"
       ],
       "settings": {
-        "title": "Продукти",
+        "title": "Нашите <strong>продукти<\/strong>",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 3,
@@ -193,12 +201,44 @@
         "padding_bottom": 36
       }
     },
+    "certificates_YTCLWg": {
+      "type": "certificates",
+      "blocks": {
+        "image_9XdHGW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/longi-partner-program-2023_premium-partner_green-energy-supplier-llc_page-0001.webp"
+          }
+        },
+        "image_mTDmxe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/green-energy-supplier-llc.webp"
+          }
+        },
+        "image_c8aiBf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/risen-gold-distributor_page-0001.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_9XdHGW",
+        "image_mTDmxe",
+        "image_c8aiBf"
+      ],
+      "settings": {
+        "heading": "Сертификати"
+      }
+    },
     "testimonials_bpBbMt": {
       "type": "testimonials",
       "blocks": {
         "testimonial_KRfTX4": {
           "type": "testimonial",
           "settings": {
+            "icon": "<i class=\"fa-solid fa-house\"><\/i>",
             "content": "<p><strong>\"Много съм доволен от инсталацията на соларните панели на моя дом. Екипът на Solar Systemss беше професионален и учтив, а самата инсталация беше бърза и безпроблемна. Вече забелязвам значително намаление в сметките си за електроенергия.\"<\/strong><\/p>",
             "author": "Author 1"
           }
@@ -206,6 +246,7 @@
         "testimonial_KXLJ4V": {
           "type": "testimonial",
           "settings": {
+            "icon": "<i class=\"fa-solid fa-house\"><\/i>",
             "content": "<p><strong>\"Избрах Solar Systems за инсталиране на соларни панели на моя бизнес, защото те предложиха най-конкурентната цена и най-висококачествените продукти. Доволен съм от решението си - системата работи отлично и ми помага да спестявам пари.\"<\/strong><\/p>",
             "author": "Author 2"
           }
@@ -213,6 +254,7 @@
         "testimonial_YLfXTm": {
           "type": "testimonial",
           "settings": {
+            "icon": "<i class=\"fa-solid fa-building\"><\/i>",
             "content": "<p><strong>\"Бях скептично настроен към соларните панели, но след като се консултирах с Solar Systems, реших да им се доверя. Те ми помогнаха да разбера как работи технологията и какви са ползите от нея. Сега съм горд собственик на соларна система и се радвам, че допринасям за опазване на околната среда.\"<\/strong><\/p>",
             "author": "Author 3"
           }
@@ -220,6 +262,7 @@
         "testimonial_JiFRJW": {
           "type": "testimonial",
           "settings": {
+            "icon": "<i class=\"fa-solid fa-building\"><\/i>",
             "content": "<p><strong>\"Препоръчвам Solar Systems на всеки, който търси надеждна и професионална фирма за инсталиране на соларни панели. Те са компетентни, отзивчиви и предлагат отлично съотношение цена-качество.\"<\/strong><\/p>",
             "author": "Author 4"
           }
@@ -227,6 +270,7 @@
         "testimonial_F9xpwm": {
           "type": "testimonial",
           "settings": {
+            "icon": "<i class=\"fa-solid fa-building\"><\/i>",
             "content": "<p><strong>\"Благодаря на Solar Systems за безпроблемната инсталация на моята соларна система. Сега мога да се радвам на чиста енергия и да намалявам разходите си.\"<\/strong><\/p>",
             "author": "Author 5"
           }
@@ -240,7 +284,9 @@
         "testimonial_F9xpwm"
       ],
       "settings": {
-        "heading": "Отзиви от наши партньори"
+        "heading": "Отзиви от наши <strong>партньори<\/strong>",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "collage_e3dmVz": {
@@ -285,9 +331,9 @@
     "contact_form_ndAHyK": {
       "type": "contact-form",
       "settings": {
-        "heading": "Contact form",
+        "heading": "<strong>Запитване<\/strong>",
         "heading_size": "h1",
-        "color_scheme": "",
+        "color_scheme": "scheme-4",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -296,9 +342,11 @@
   "order": [
     "hero_j6f9gh",
     "rich_text_bNfdN4",
-    "features_aBjrdR",
     "services_YKhy3C",
+    "features_aBjrdR",
+    "image_content_pawAYm",
     "collection_list_4qVHbw",
+    "certificates_YTCLWg",
     "testimonials_bpBbMt",
     "collage_e3dmVz",
     "contact_form_ndAHyK"

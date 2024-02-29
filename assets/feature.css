@@ -8,8 +8,13 @@
 
 .feature .feature__icon {
   width: 100%;
+  background-color:  rgb(232 232 232 / 42%);
+  padding: 5rem 2rem;
+  border-radius: 1.6rem;
+  backdrop-filter: blur(10px);
 }
 
 .feature .feature__icon img {
   max-height: 4rem;
+  vertical-align: top;
 }

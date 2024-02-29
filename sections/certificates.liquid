@@ -1,0 +1,69 @@
+<script src="{{- 'swiper-bundle.min.js' | asset_url -}}" defer="defer"></script>
+<script src="{{- 'certificates-slider.js' | asset_url -}}" defer="defer"></script>
+
+{{- 'swiper-bundle.min.css' | asset_url | stylesheet_tag -}}
+{{- 'certificates.css' | asset_url | stylesheet_tag -}}
+
+{% assign _section = section.settings %}
+{% assign _blocks = section.blocks %}
+
+{% if _section.heading != blank or _block.size > 0 %}
+  <section class="section-certificates">
+    <div class="page-width">
+      {% if _section.heading != blank %}
+        <h1 data-aos="fade-up" class="certificates__heading">{{ _section.heading }}</h1>
+      {% endif %}
+  
+      <certificates-slider data-aos="fade-up" class="swiper certificates__slider">
+        <div class="swiper-wrapper">      
+          {% for block in _blocks %}
+            {% assign _block = block.settings %}
+
+            {% if _block.image != blank %}
+              <div class="swiper-slide" >          
+                <div class="section__image">
+                  <img src="{{ _block.image |  image_url: width: 600 }}" loading="lazy" alt="">
+                </div><!-- /.section__image -->
+              </div><!-- /.swiper-slide -->
+            {% endif %}
+          {% endfor %}
+        </div><!-- /.swiper-wrapper -->
+    
+        {% if _blocks.size > 1 %}
+          <div class="swiper-pagination"></div><!-- /.swiper-pagination -->
+        {% endif %}
+      </certificates-slider><!-- /.certificates-slider -->  
+    </div><!-- /.page-width -->
+  </section><!-- /.section-certificates -->
+{% endif %}
+
+{% schema %}
+  {
+  "name": "Certificates",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Image",
+      "type": "image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Certificates"
+    }
+  ]
+}  
+{% endschema %}

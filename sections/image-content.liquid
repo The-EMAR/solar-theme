@@ -1,0 +1,49 @@
+{{- 'image-content.css' | asset_url | stylesheet_tag -}}
+
+{% assign _section = section.settings %}
+{% assign _blocks = section.blocks %}
+
+{% if _section.image != blank or _section.content != blank %}
+  <section class="section-image-content">
+    <div class="page-width">
+      <div class="section__inner">
+        {% if _section.image != blank %}
+          <div data-aos="fade-up" class="section__image">
+            <img src="{{ _section.image |  image_url: width: 600  }}" loading="lazy" alt="">
+          </div><!-- /.section__image -->
+        {% endif %}
+  
+        {% if _section.content != blank %}
+          <div data-aos="fade-up" class="section__content">
+            <div class="section__entry">
+              {{ _section.content }}
+            </div><!-- /.section__entry -->
+          </div><!-- /.section__content -->
+        {% endif %}
+      </div><!-- /.section__inner -->
+    </div><!-- /.page-width -->
+  </section><!-- /.image-content -->
+{% endif %}
+
+{% schema %}
+  {
+  "name": "Image and Content",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image and Content"
+    }
+  ]
+}  
+{% endschema %}

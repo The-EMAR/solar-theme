@@ -1,7 +1,7 @@
 .services {}
 
 .services .services__heading {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .services .services__inner {
@@ -12,6 +12,10 @@
 
 /* Mobile */
 @media (max-width: 767px) {
+  .services .services__heading {
+    text-align: left;
+  }
+
   .services .services__inner {
     display: grid;
     grid-template-columns: 1fr;
